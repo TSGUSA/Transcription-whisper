@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Display Colab Link
+        run: |
+          echo "Your Colab Notebook URL:"
+          echo "https://colab.research.google.com/github/TSGUSA/Transcription-whiaper/blob/main/transcription.ipynb"
+          echo "Click the link above to open in Google Colab"
+
+      - name: Other steps
+        run: |
+          echo "Add your build/test/deploy commands here"
