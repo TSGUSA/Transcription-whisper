@@ -17,11 +17,4 @@ Click the **Open in Colab** button above to launch the notebook.
 ### 2. Upload Your Files
 Once the Colab notebook is open:
 1. **Run the first cell** to install dependencies.
-2. **Run the file upload cell** (see example below) to upload your audio/video file.
-
-#### File Upload Code (Already in Notebook)
-```python
-from google.colab import files
-
-uploaded = files.upload()
-print("Uploaded files:", uploaded.keys())
+2. **Run the file upload cell** (see example below) to upload your audio/video file
